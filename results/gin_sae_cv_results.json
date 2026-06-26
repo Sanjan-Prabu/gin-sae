@@ -1,0 +1,158 @@
+{
+  "train_molecules": 6000,
+  "heldout_molecules": 1831,
+  "train_atoms": 111747,
+  "heldout_atoms": 33509,
+  "n_features": 2048,
+  "k": 16,
+  "heldout_fvu": 0.11,
+  "heldout_features_purity_ge_0.7": 500,
+  "heldout_features_purity_ge_0.8": 158,
+  "heldout_features_purity_ge_0.9": 20,
+  "best_detector_per_concept": {
+    "carboxylic_acid": {
+      "purity": 0.5,
+      "enrichment": 25.2,
+      "feat": 20,
+      "base_rate": 0.0198
+    },
+    "ester": {
+      "purity": 0.62,
+      "enrichment": 12.3,
+      "feat": 1890,
+      "base_rate": 0.0504
+    },
+    "amide": {
+      "purity": 0.5,
+      "enrichment": 10.3,
+      "feat": 340,
+      "base_rate": 0.0485
+    },
+    "hydroxyl": {
+      "purity": 0.72,
+      "enrichment": 11.1,
+      "feat": 184,
+      "base_rate": 0.0651
+    },
+    "ketone": {
+      "purity": 0.5,
+      "enrichment": 19.5,
+      "feat": 530,
+      "base_rate": 0.0257
+    },
+    "aldehyde": {
+      "purity": 0.2,
+      "enrichment": 93.1,
+      "feat": 1580,
+      "base_rate": 0.0021
+    },
+    "ether": {
+      "purity": 0.9,
+      "enrichment": 9.1,
+      "feat": 768,
+      "base_rate": 0.0988
+    },
+    "primary_amine": {
+      "purity": 0.32,
+      "enrichment": 37.6,
+      "feat": 1467,
+      "base_rate": 0.0085
+    },
+    "nitro": {
+      "purity": 0.22,
+      "enrichment": 81.0,
+      "feat": 448,
+      "base_rate": 0.0027
+    },
+    "nitrile": {
+      "purity": 0.38,
+      "enrichment": 120.1,
+      "feat": 1965,
+      "base_rate": 0.0032
+    },
+    "sulfonamide": {
+      "purity": 0.32,
+      "enrichment": 42.9,
+      "feat": 1661,
+      "base_rate": 0.0075
+    },
+    "sulfone": {
+      "purity": 0.34,
+      "enrichment": 134.0,
+      "feat": 1069,
+      "base_rate": 0.0025
+    },
+    "halogen": {
+      "purity": 0.72,
+      "enrichment": 21.7,
+      "feat": 687,
+      "base_rate": 0.0332
+    },
+    "phenol": {
+      "purity": 0.48,
+      "enrichment": 35.3,
+      "feat": 1977,
+      "base_rate": 0.0136
+    },
+    "aromatic": {
+      "purity": 0.94,
+      "enrichment": 2.8,
+      "feat": 2004,
+      "base_rate": 0.3387
+    },
+    "in_ring": {
+      "purity": 0.98,
+      "enrichment": 2.0,
+      "feat": 2004,
+      "base_rate": 0.5008
+    },
+    "is_N": {
+      "purity": 0.52,
+      "enrichment": 7.0,
+      "feat": 157,
+      "base_rate": 0.0739
+    },
+    "is_O": {
+      "purity": 0.64,
+      "enrichment": 4.4,
+      "feat": 1529,
+      "base_rate": 0.1449
+    },
+    "is_S": {
+      "purity": 0.24,
+      "enrichment": 17.8,
+      "feat": 59,
+      "base_rate": 0.0135
+    },
+    "is_halogen": {
+      "purity": 0.72,
+      "enrichment": 21.7,
+      "feat": 687,
+      "base_rate": 0.0332
+    },
+    "arom_N": {
+      "purity": 0.3,
+      "enrichment": 14.2,
+      "feat": 711,
+      "base_rate": 0.0212
+    },
+    "arom_O": {
+      "purity": 0.14,
+      "enrichment": 109.1,
+      "feat": 372,
+      "base_rate": 0.0013
+    },
+    "hbond_donor": {
+      "purity": 0.52,
+      "enrichment": 8.0,
+      "feat": 157,
+      "base_rate": 0.0648
+    },
+    "hbond_acceptor": {
+      "purity": 0.7,
+      "enrichment": 3.2,
+      "feat": 644,
+      "base_rate": 0.2188
+    }
+  }
+}
