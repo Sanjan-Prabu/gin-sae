@@ -42,9 +42,14 @@ graph-based drug-repurposing models.
 
 - `fig1_top_molecules.png` — top molecules for representative features, with the atoms that
   activate each feature highlighted (e.g., the ether feature lights up on ether oxygens).
-- `fig2_feature_concept_heatmap.png` — feature x functional-group purity. The highest-purity
-  features are common structural concepts (ring / aromatic); specific functional-group
-  detectors (e.g. the ether feature) appear as distinct bright cells.
+- `fig2_feature_concept_heatmap.png` — **the best SAE feature for each chemical concept.**
+  Both axes are concepts; each column is that concept's best detector, and cell color is
+  purity. The **bright diagonal** shows every concept has its own dedicated feature; x-axis
+  labels give each detector's enrichment over base rate (e.g. ether 0.90 purity / 9x,
+  halogen 0.72 / 22x, nitrile 0.38 / 120x). Common concepts (ring, aromatic) have high
+  purity but low enrichment; rare functional groups have lower purity but very high
+  enrichment. Off-diagonal cells show chemically sensible overlap (e.g. the is_O row lights
+  up for all oxygen-containing groups).
 - `fig3_interpretability_summary.png` — how many features are interpretable (purity tiers),
   and the best detector per functional group by enrichment.
 
