@@ -40,18 +40,20 @@ graph-based drug-repurposing models.
 
 ## Figures (`figures/`)
 
-- `fig1_top_molecules.png` — top molecules for representative features, with the atoms that
-  activate each feature highlighted (e.g., the ether feature lights up on ether oxygens).
-- `fig2_feature_concept_heatmap.png` — **the best SAE feature for each chemical concept.**
-  Both axes are concepts; each column is that concept's best detector, and cell color is
-  purity. The **bright diagonal** shows every concept has its own dedicated feature; x-axis
-  labels give each detector's enrichment over base rate (e.g. ether 0.90 purity / 9x,
-  halogen 0.72 / 22x, nitrile 0.38 / 120x). Common concepts (ring, aromatic) have high
-  purity but low enrichment; rare functional groups have lower purity but very high
-  enrichment. Off-diagonal cells show chemically sensible overlap (e.g. the is_O row lights
-  up for all oxygen-containing groups).
-- `fig3_interpretability_summary.png` — how many features are interpretable (purity tiers),
-  and the best detector per functional group by enrichment.
+- `fig1_top_molecules.png` — representative features with each activating atom colored by
+  ground truth: **green if it truly is the concept (correct), red if not.** Purity becomes
+  visible — the ether feature (0.90) is almost all green, the ketone feature (0.50) is about
+  half red.
+- `fig2_feature_concept_heatmap.png` — **the best SAE feature for each chemical concept,**
+  with each concept's **base rate on its row label**. Both axes are concepts; cell color is
+  purity; the bright diagonal shows every concept has a dedicated feature. The base rate is
+  what makes purity meaningful: in-ring 0.98 purity looks impressive until you see rings are
+  ~50% of atoms (2x), whereas ether 0.90 against a 10% base is genuinely strong (9x).
+- `fig3_interpretability_summary.png` — **precision and recall shown directly**, because any
+  single number is confounded by base rate here (purity favors common concepts; enrichment
+  and single-feature F1 favor rare ones). Left: every feature is precise but low-recall (each
+  concept is split across many features). Right: the cleanest detector per functional group
+  ranked by precision (halogen/ether/hydroxyl highest), with recall and F1 shown alongside.
 
 ## Run it
 
